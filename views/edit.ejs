@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+
+<div class="form-container">
+    <form
+action="/chats/<%= chat._id %>?_method=PATCH"
+method="POST">
+
+    <textarea
+    name="msg"><%= chat.msg %></textarea>
+
+    <button>
+        Update
+    </button>
+
+</form>
+
+</div>
+<%- include("partials/footer") %>

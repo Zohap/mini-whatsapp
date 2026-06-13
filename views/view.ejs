@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+
+<div class="single">
+
+    <h2>
+        <%= chat.from %>
+    </h2>
+
+    <h3>
+        To:
+        <%= chat.to %>
+    </h3>
+
+    <p>
+        <%= chat.msg %>
+    </p>
+    <p>
+    <%= chat.created_at.toLocaleString() %>
+</p>
+    <form action="/chats">
+        <button type="submit">Back
+        </button>
+    </form>
+
+</div>
+
+<%- include("partials/footer") %>
